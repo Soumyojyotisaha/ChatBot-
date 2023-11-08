@@ -15,16 +15,16 @@ cd your-project-directory
 
 ## Install Dependencies
 npm install
-# or
+or
 yarn
-# or
+or
 pnpm install
 
 ## Start the Development Server
 npm run dev
-# or
+or
 yarn dev
-# or
+or
 pnpm dev
 
 ## Open in Your Browser
