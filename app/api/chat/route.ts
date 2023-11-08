@@ -5,7 +5,7 @@ import { OpenAIStream, StreamingTextResponse } from "ai";
 export const runtime = 'edge'; // Provide optimal infrastructure for our API route (https://edge-runtime.vercel.app/)
 
 const config = new Configuration({
-    apiKey: "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"
+    apiKey: "process.env.OPENAI_API_KEY"
 "
 })
 const openai = new OpenAIApi(config);
