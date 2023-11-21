@@ -44,7 +44,7 @@ export default function ChatComponent() {
                 <p>Your Message</p>
                 <textarea
                     className="mt-2 w-full bg-slate-600 p-2"
-                    placeholder={"Who won the World Cup 2023?"}
+                    placeholder={"What are data structures and algorithms?"}
                     value={input}
                     onChange={handleInputChange}
                 />
