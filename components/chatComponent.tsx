@@ -11,7 +11,7 @@ export default function ChatComponent() {
     console.log(input);
 
     return (
-        <div>
+        <div className=" p-3 rounded-md text-white">
             {messages.map((message : Message) => {
                 return (
                     <div key={message.id}>
@@ -24,7 +24,7 @@ export default function ChatComponent() {
                             </h3>
                             :
                             <h3 className="text-lg font-semibold mt-2">
-                                User
+                                You
                             </h3>
                         }
                         
@@ -36,16 +36,15 @@ export default function ChatComponent() {
                                 return <p key={message.id + index}>{currentTextBlock}</p> // "Cooper Codes is a YouTuber"
                             }
                         })}
-
                     </div>
-                )
+                );
             })}
 
             <form className="mt-12" onSubmit={handleSubmit}>
-                <p>User Message</p>
+                <p>Your Message</p>
                 <textarea
                     className="mt-2 w-full bg-slate-600 p-2"
-                    placeholder={"What are data structures and algorithims?"}
+                    placeholder={"Who won the World Cup 2023?"}
                     value={input}
                     onChange={handleInputChange}
                 />
@@ -54,5 +53,5 @@ export default function ChatComponent() {
                 </button>
             </form>
         </div>
-    )
+    );
 }

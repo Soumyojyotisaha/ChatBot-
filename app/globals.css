@@ -2,26 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Add this CSS to your stylesheets */
+.chat-container {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.message-text {
+  font-size: 16px;
+}
+
+.message-sender {
+  font-weight: bold;
+}
+
+.assistant-text {
+  color: #3498db; /* Blue color for assistant text */
+}
+
+.user-text {
+  color: #e74c3c; /* Red color for user text */
+}
+
+.user-message-label {
+  font-weight: bold;
+}
+
+.user-message-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+}
+
+.send-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.send-button:hover {
+  background-color: #e74c3c; /* Red color on hover for the button */
 }
