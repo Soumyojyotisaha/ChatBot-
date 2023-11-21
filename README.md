@@ -8,7 +8,7 @@ A powerful and efficient web application built with Next.js.
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository_url>
+   git clone (https://github.com/Soumyojyotisaha/ChatBot-.git)
 
 ## Navigate to the Project Directory
 cd your-project-directory
