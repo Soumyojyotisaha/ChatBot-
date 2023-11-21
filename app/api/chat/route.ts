@@ -5,10 +5,9 @@ import { OpenAIStream, StreamingTextResponse } from "ai";
 export const runtime = 'edge'; // Provide optimal infrastructure for our API route (https://edge-runtime.vercel.app/)
 
 const config = new Configuration({
-    apiKey: "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"
-})
+    apiKey: process.env.OPENAI_API_KEY // Use the environment variable
+});
 const openai = new OpenAIApi(config);
-
 
 // POST localhost:3000/api/chat
 export async function POST(request: Request) {
@@ -29,7 +28,7 @@ export async function POST(request: Request) {
             { role: "system", content: "You are a helpful assistant. You explain software concepts simply to intermediate programmers."},
             ...messages
         ]
-    })
+    });
 
     // create a stream of data from OpenAI (stream data to the frontend)
     const stream = await OpenAIStream(response);
