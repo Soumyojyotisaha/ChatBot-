@@ -6,6 +6,7 @@ This is a React  component designed to facilitate chat interactions with the Ver
 ```bash
 chat-bot-ochre.vercel.app
 ```
+![image](https://github.com/Soumyojyotisaha/ChatBot-/blob/main/Screenshot%202023-12-28%20115409.png)
 
 ## Features
 
