@@ -23,7 +23,7 @@ To integrate this ChatComponent into your React project, follow these steps:
 1. Install the "ai/react" package:
 
     ```bash
-    npm install @ai/react
+    npm install 
     ```
 
 2. Import the `ChatComponent` into your project:
